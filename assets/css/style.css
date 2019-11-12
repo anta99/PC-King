@@ -1,0 +1,418 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+img {
+  width: 100%;
+}
+
+.bodyAcitve {
+  background-color: rgba(21, 22, 29, 0.5);
+  overflow: hidden;
+}
+
+#coverDiv {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 998;
+  top: 0;
+  left: 0;
+  background-color: rgba(21, 22, 29, 0.5);
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+  background-color: #15161d;
+  border-bottom: 3px solid #d10024;
+}
+
+#nav {
+  width: 50%;
+  text-align: right;
+}
+
+#logo {
+  width: 30%;
+  padding: 10px;
+  color: #fff;
+}
+
+#logo h1 {
+  font-size: 50px;
+}
+
+#redHeading {
+  color: #d10024;
+  text-transform: uppercase;
+}
+
+#menu li {
+  display: inline-block;
+  padding: 30px;
+  position: relative;
+}
+
+#menu li a {
+  color: #fff;
+  font-size: 25px;
+}
+
+#menu li a::after {
+  content: "";
+  display: block;
+  width: 0;
+  background: #d10024;
+  height: 2px;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+#menu li a:hover::after {
+  width: 100%;
+}
+
+#responsive {
+  color: #fff;
+  display: none;
+  text-align: right;
+  padding: 10px 0px;
+}
+
+#responsive i {
+  font-size: 30px;
+}
+
+#podmeni {
+  position: absolute;
+  width: 100%;
+  display: none;
+  left: 0;
+  background: #15161d;
+  text-align: center;
+  z-index: 100;
+}
+
+#slider {
+  position: relative;
+  width: 100%;
+  background: #15161d;
+}
+
+#next, #prev {
+  position: absolute;
+  color: #fff;
+  font-size: 50px;
+  z-index: 100;
+  top: 40%;
+}
+
+#next {
+  right: 10px;
+}
+
+#prev {
+  left: 10px;
+}
+
+#slideImg {
+  position: relative;
+}
+
+.message {
+  background-color: rgba(21, 22, 29, 0.5);
+  position: absolute;
+  width: 50%;
+  top: 35%;
+  text-align: center;
+  left: 0;
+  color: #fff;
+  z-index: 2;
+  right: 0;
+  margin: 0px auto;
+}
+
+.message h1 {
+  font-size: 60px;
+  margin-bottom: 30px;
+}
+
+.message h2 {
+  font-size: 40px;
+}
+
+.slideFade {
+  -webkit-animation: fade .8s ease-in-out;
+          animation: fade .8s ease-in-out;
+}
+
+.slideMessage {
+  -webkit-animation: slide 1.5s;
+          animation: slide 1.5s;
+}
+
+@-webkit-keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes slide {
+  0% {
+    top: -100%;
+  }
+  100% {
+    top: 35%;
+  }
+}
+
+@keyframes slide {
+  0% {
+    top: -100%;
+  }
+  100% {
+    top: 35%;
+  }
+}
+
+#about {
+  background-color: #15161d;
+  color: #fff;
+  padding: 30px 0px;
+}
+
+#textAbout {
+  width: 70%;
+  margin: 0px auto;
+}
+
+#textAbout h2 {
+  font-size: 50px;
+  text-align: center;
+  margin: 20px 0px;
+}
+
+#textAbout p {
+  font-size: 25px;
+  padding: 20px;
+  text-align: justify;
+}
+
+#textAbout img {
+  display: none;
+}
+
+.textAbout {
+  padding: 20px;
+  position: relative;
+  margin: 20px 0px;
+  border-bottom: 2px solid #d10024;
+}
+
+.textAbout p {
+  font-size: 25px;
+  text-align: justify;
+  display: none;
+}
+
+.textAbout h2 {
+  font-size: 35px;
+  cursor: pointer;
+}
+
+.plus {
+  text-align: center;
+  display: block;
+  font-size: 35px;
+  -webkit-transition: .5s;
+  transition: .5s;
+  cursor: pointer;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.plusActive {
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+}
+
+.colorHeading {
+  color: #d10024;
+}
+
+#bestSellers {
+  text-align: center;
+  padding: 20px;
+  margin: 20px 0px;
+}
+
+#bestSellers h2 {
+  font-size: 50px;
+  color: #15161d;
+}
+
+#wrapper, #wrapperProduct {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 20px;
+  margin: 20px auto;
+  width: 70%;
+}
+
+.bestSeler, .product {
+  width: 20%;
+  color: #15161d;
+  overflow: hidden;
+  position: relative;
+  padding: 20px;
+}
+
+.bestSeler h3, .product h3 {
+  font-size: 30px;
+}
+
+.bestSeler span, .product span {
+  color: #d10024;
+  font-size: 30px;
+  display: block;
+  margin-top: 10px;
+}
+
+.bestSeler a, .product a {
+  color: #15161d;
+  display: inline;
+}
+
+.bestSeler:hover .options, .product:hover .options {
+  opacity: 1;
+}
+
+.options {
+  margin-top: 10px;
+  opacity: 0;
+  -webkit-transition: 1s;
+  transition: 1s;
+  padding: 10px;
+  border-top: 1px solid rgba(21, 22, 29, 0.5);
+}
+
+.options button {
+  font-size: 25px;
+  background-color: #15161d;
+  color: #fff;
+  width: 100%;
+  margin: 5px 0px;
+  border: none;
+  padding: 10px;
+}
+
+.options button:hover {
+  background-color: #d10024;
+}
+
+#products {
+  text-align: center;
+  margin: 30px 0px;
+}
+
+#products h2 {
+  font-size: 50px;
+}
+
+.filterbtn {
+  display: inline-block;
+  padding: 20px;
+  border: 2px solid #15161d;
+  background-color: transparent;
+  outline: none;
+  border: 2px solid #15161d;
+  margin: 30px 20px;
+  font-size: 25px;
+  -webkit-transition: .5s;
+  transition: .5s;
+  width: 20%;
+}
+
+.filterActive {
+  background: #d10024;
+  color: #fff;
+}
+
+.fixedDiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  position: fixed;
+  width: 80%;
+  background-color: #fff;
+  left: 0;
+  min-height: 80%;
+  right: 0;
+  overflow-y: scroll;
+  margin: 0px auto;
+  z-index: 999;
+  top: 15%;
+}
+
+.product {
+  width: 22%;
+}
+
+.detailImg {
+  width: 40%;
+}
+
+.detaliName {
+  width: 50%;
+}
+
+.close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pc King</title>
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+    <link rel="stylesheet" href="assets/css/queries.css" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+<body>
+    <header>
+        <nav>
+            <div id="logo">
+                <h1><span id="redHeading">pc</span> King</h1>
+            </div>
+            <div id="responsive"><i class="fa fa-navicon"></i></div>
+            <div id="nav">
+                <ul id="menu"></ul>
+            </div>
+        </nav>
+        <section id="slider">
+            <span id="next"><i class="fa fa-chevron-right"></i></span>
+            <span id="prev"><i class="fa fa-chevron-left"></i></span>
+            <div id="slideImg">
+                <!--<img src="src" alt="sliderSlika" class="slika" />-->
+                <div class="message">
+                    <h1>Ovde ide neki naslov</h1>
+                    <h2>Ovde ide neki podnaslov</h2>
+                </div>
+            </div>
+        </section>
+    </header>
+    <main>
+        <section id="about">
+            <article id="textAbout">
+                <h2>About us</h2>
+            </article>
+        </section>
+        <section id="bestSellers">
+            <h2>Best sellesrs</h2>
+            <div id="wrapper"></div>
+        </section>
+        <section id="products">
+            <h2>Products</h2>
+            <button class="filterbtn filterActive" onclick='filter(".product","")'>All</button>
+            <button class="filterbtn" onclick='filter(".product","fwef")'>PC</button>
+            <button class="filterbtn" onclick='filter(".product","laptops")'>Laptops</button>
+           <div id="wrapperProduct"></div>
+        </section>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

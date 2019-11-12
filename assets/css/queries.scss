@@ -1,0 +1,170 @@
+@media screen and (min-width:1200px) and (max-width:1600px){
+    .bestSeler,.product{
+        width: 25%;
+        
+    }
+}
+@media screen and (min-width:800px) and (max-width:1200px){
+    #menu li{
+        padding:30px 10px;
+        a{
+            font-size:22px;
+        }
+    }
+    .message{
+        width: 80%;
+        h1{
+            font-size: 50px;
+        }
+        h2{
+            font-size: 40px;
+        }
+    }
+    #next,#prev{
+        font-size:35px;
+    }
+    //About
+    .textAbout{
+        padding: 10px;
+    }
+    .plus{
+        right:10px;
+        top:10px;
+    }
+     //Best Sellers
+    .bestSeler,.product{
+        width: 50%;
+        h3{
+            font-size:22px;
+        }
+    }
+}
+@media screen and (max-width:800px){
+    #logo{
+        width: 50%;
+        h1{
+            font-size:30px;
+        }
+    }
+    #responsive{
+        display: block;
+        width:40%;
+        padding-right: 20px;
+    }
+    #podmeni{
+        position: relative;
+    }
+    #menu{
+      display: none;
+      text-align: center;
+      li{
+          display: block;
+          padding: 10px;
+      }
+    }
+    #nav{
+        width: 100%;
+    }
+    #next,#prev{
+        font-size:25px;
+    }
+    .message{
+        width: 100%;
+        top:20%;
+    }
+    @keyframes slide{
+        0%{
+            top:-100%;
+        }
+        100%{
+            top:20%;
+        }
+    }
+    //About
+    #textAbout{
+        width: 100%;
+        order:1;
+    }
+    .textAbout p{
+        word-wrap: break-word;
+        word-break: keep-all;
+        text-align: center;
+        font-size:22px;
+    }
+    .plus{
+        right:10px;
+    }
+     //Best Sellers
+    .bestSeler,.product{
+        width: 100%;
+        h3{
+            font-size:22px;
+        }
+    }
+}
+@media screen and (max-width:600px){
+    #logo{
+        width: 50%;
+        h1{
+            font-size:30px;
+        }
+    }
+    #responsive{
+        display: block;
+        width:40%;
+        padding-right: 20px;
+    }
+    #podmeni{
+        position: relative;
+    }
+    #menu{
+      display: none;
+      text-align: center;
+      li{
+          display: block;
+          padding: 10px;
+      }
+    }
+    #nav{
+        width: 100%;
+    }
+    #next,#prev{
+        font-size:25px;
+    }
+    .message{
+        display: none;
+        h1,h2{
+            font-size: 25px;
+        }
+    }
+    //About
+    .textAbout{
+        padding:10px;
+    }
+    .plus{
+        top:50%;
+    }
+    //Best Sellers
+    .wrapper{
+        width:100%;
+    }
+    .bestSeler,.product{
+        width: 100%;
+        padding:0px;
+        h3{
+            font-size:22px;
+        }
+    }
+    .options{
+        padding:0px;
+        button{
+            font-size:20px;
+
+        }
+    }
+    //Products
+    .filterbtn{
+        width: 90%;
+        margin:30px auto;
+    }
+}
