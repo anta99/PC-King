@@ -36,6 +36,15 @@
   .bestSeler h3, .product h3 {
     font-size: 22px;
   }
+  #newsletter {
+    width: 80%;
+  }
+  #newsletter input {
+    width: 60%;
+  }
+  #newsletter button {
+    width: 30%;
+  }
 }
 
 @media screen and (max-width: 800px) {
@@ -107,6 +116,18 @@
   }
   .bestSeler h3, .product h3 {
     font-size: 22px;
+  }
+  #newsletter {
+    width: 100%;
+  }
+  #newsletter h2 {
+    font-size: 35px;
+  }
+  #newsletter input {
+    width: 100%;
+  }
+  #newsletter button {
+    width: 70%;
   }
 }
 

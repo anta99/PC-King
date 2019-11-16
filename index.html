@@ -44,12 +44,25 @@
         </section>
         <section id="products">
             <h2>Products</h2>
-            <button class="filterbtn filterActive" onclick='filter(".product","")'>All</button>
-            <button class="filterbtn" onclick='filter(".product","fwef")'>PC</button>
-            <button class="filterbtn" onclick='filter(".product","laptops")'>Laptops</button>
+            <button class="filterbtn filterActive" onclick='filter("")'>All</button>
+            <button class="filterbtn" onclick='filter("pc")'>PC</button>
+            <button class="filterbtn" onclick='filter("laptop")'>Laptops</button>
            <div id="wrapperProduct"></div>
         </section>
+        <section id="contact">
+            <article id="newsletter">
+                <h2>Subscribe on our newsletter</h2>
+                <form action="" method="GET" name="newsletter">
+                    <input type="text" id="mail" name="mail" placeholder="Enter your mail"/><br/>
+                    <span id="newsMessage"></span><br/>
+                    <button id="sign">Sign in</button>
+                </form>
+            </article>
+        </section>
     </main>
+    <footer>
+        
+    </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="assets/js/main.js"></script>
 </body>

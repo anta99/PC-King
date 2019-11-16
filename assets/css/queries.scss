@@ -38,6 +38,17 @@
             font-size:22px;
         }
     }
+    //Contact
+    #newsletter{
+        width:80%;
+        
+        input{
+            width: 60%;
+        }
+        button{
+            width: 30%;;
+        }
+    }
 }
 @media screen and (max-width:800px){
     #logo{
@@ -99,6 +110,19 @@
         width: 100%;
         h3{
             font-size:22px;
+        }
+    }
+    //Contact
+    #newsletter{
+        width:100%;
+        h2{
+            font-size:35px;
+        }
+        input{
+            width: 100%;
+        }
+        button{
+            width: 70%;;
         }
     }
 }

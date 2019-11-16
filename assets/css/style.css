@@ -300,8 +300,8 @@ nav {
 .bestSeler, .product {
   width: 20%;
   color: #15161d;
-  overflow: hidden;
   position: relative;
+  cursor: pointer;
   padding: 20px;
 }
 
@@ -400,19 +400,74 @@ nav {
 
 .product {
   width: 22%;
+  cursor: pointer;
 }
 
 .detailImg {
-  width: 40%;
+  width: 30%;
+  padding: 40px;
 }
 
 .detaliName {
   width: 50%;
+  text-align: center;
+  padding: 30px 10px;
 }
 
 .close {
   position: absolute;
-  top: 20px;
+  top: 10px;
+  cursor: pointer;
+  font-size: 40px;
   right: 20px;
+}
+
+#contact {
+  background-image: url("../images/newsletter.png");
+  background-size: cover;
+  background-position: center;
+  padding: 40px;
+}
+
+#newsletter {
+  width: 60%;
+  text-align: center;
+  margin: 20px auto;
+  color: #fff;
+}
+
+#newsletter h2 {
+  font-size: 50px;
+}
+
+#newsletter input {
+  padding: 10px;
+  width: 50%;
+  margin: 50px auto;
+  margin-bottom: 20px;
+}
+
+#newsletter button {
+  font-size: 25px;
+  background-color: #fff;
+  color: #15161d;
+  width: 20%;
+  border: none;
+  margin: 20px;
+  padding: 10px;
+}
+
+#newsletter button:hover {
+  background-color: #d10024;
+  color: #fff;
+}
+
+#newsMessage {
+  font-size: 25px;
+}
+
+footer {
+  background-color: #15161d;
+  height: 20vh;
 }
 /*# sourceMappingURL=style.css.map */
