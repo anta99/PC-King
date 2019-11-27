@@ -2,6 +2,9 @@
   .bestSeler, .product {
     width: 25%;
   }
+  #mob1, #mob2 {
+    width: 25%;
+  }
 }
 
 @media screen and (min-width: 800px) and (max-width: 1200px) {
@@ -43,6 +46,30 @@
     width: 60%;
   }
   #newsletter button {
+    width: 30%;
+  }
+  .fixedDiv {
+    top: 5%;
+  }
+  .detaliName {
+    width: 100%;
+  }
+  .detailImg {
+    width: 50%;
+  }
+  #orderForm {
+    width: 100%;
+  }
+  .row {
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  input {
+    width: 100%;
+  }
+  #mob1, #mob2 {
     width: 30%;
   }
 }
@@ -129,6 +156,37 @@
   #newsletter button {
     width: 70%;
   }
+  .fixedDiv {
+    top: 5%;
+  }
+  .detaliName {
+    width: 100%;
+  }
+  .detailImg {
+    width: 100%;
+  }
+  #footnav, #social {
+    width: 100%;
+    text-align: center;
+  }
+  #orderForm {
+    width: 100%;
+  }
+  #orderForm input {
+    width: 100%;
+  }
+  #city, #zip {
+    width: 100%;
+  }
+  #mob1, #mob2 {
+    width: 100%;
+  }
+  #finish button {
+    width: 100%;
+  }
+  #pay {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -189,8 +247,12 @@
     font-size: 20px;
   }
   .filterbtn {
-    width: 90%;
+    width: 70%;
     margin: 30px auto;
+  }
+  #footnav li {
+    display: block;
+    padding: 10px;
   }
 }
 /*# sourceMappingURL=queries.css.map */

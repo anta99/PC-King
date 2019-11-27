@@ -11,6 +11,7 @@
 </head>
 <body>
     <header>
+        <div id="scrollTop"><i class="fa fa-arrow-up"></i></div>
         <nav>
             <div id="logo">
                 <h1><span id="redHeading">pc</span> King</h1>
@@ -55,7 +56,7 @@
                 <form action="" method="GET" name="newsletter">
                     <input type="text" id="mail" name="mail" placeholder="Enter your mail"/><br/>
                     <span id="newsMessage"></span><br/>
-                    <button id="sign">Sign in</button>
+                    <input type="button" id="sign" value="Sign in" onclick="newsLetter()"/>
                 </form>
             </article>
         </section>
@@ -64,6 +65,7 @@
         
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="assets/js/menus.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
 </html>

@@ -22,6 +22,18 @@ img {
   overflow: hidden;
 }
 
+#scrollTop {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: #d10024;
+  color: #fff;
+  padding: 10px;
+  display: none;
+  z-index: 997;
+  font-size: 30px;
+}
+
 #coverDiv {
   position: fixed;
   width: 100%;
@@ -348,6 +360,20 @@ nav {
   background-color: #d10024;
 }
 
+.buynow {
+  font-size: 25px;
+  background-color: #15161d;
+  color: #fff;
+  width: 100%;
+  margin: 5px 0px;
+  border: none;
+  padding: 10px;
+}
+
+.buynow:hover {
+  background-color: #d10024;
+}
+
 #products {
   text-align: center;
   margin: 30px 0px;
@@ -390,7 +416,7 @@ nav {
   width: 80%;
   background-color: #fff;
   left: 0;
-  min-height: 80%;
+  max-height: 100%;
   right: 0;
   overflow-y: scroll;
   margin: 0px auto;
@@ -412,6 +438,12 @@ nav {
   width: 50%;
   text-align: center;
   padding: 30px 10px;
+  margin: 30px auto;
+}
+
+.detaliName ul li {
+  text-align: center;
+  margin: 20px auto;
 }
 
 .close {
@@ -447,19 +479,22 @@ nav {
   margin-bottom: 20px;
 }
 
-#newsletter button {
+#sign {
   font-size: 25px;
+  background-color: #15161d;
+  color: #fff;
+  width: 100%;
+  margin: 5px 0px;
+  border: none;
+  padding: 10px;
+  width: 20%;
   background-color: #fff;
   color: #15161d;
-  width: 20%;
-  border: none;
-  margin: 20px;
-  padding: 10px;
+  margin: 30px 0px;
 }
 
-#newsletter button:hover {
+#sign:hover {
   background-color: #d10024;
-  color: #fff;
 }
 
 #newsMessage {
@@ -467,7 +502,205 @@ nav {
 }
 
 footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   background-color: #15161d;
-  height: 20vh;
+}
+
+#footnav, #social {
+  width: 30%;
+  color: #fff;
+  padding: 20px;
+  border: none;
+}
+
+#footnav li, #social li {
+  display: inline;
+  padding: 20px;
+}
+
+#footnav li a, #social li a {
+  color: #fff;
+  font-size: 20px;
+}
+
+#social {
+  text-align: right;
+}
+
+#order {
+  background-color: #15161d;
+  padding: 20px;
+}
+
+#order h2 {
+  font-size: 60px;
+  text-align: center;
+  color: #fff;
+}
+
+#order select, #order textarea, #order input {
+  border: 2px solid #15161d;
+  padding: 0px 10px;
+  outline: none;
+}
+
+#orderForm {
+  width: 60%;
+  background: #fff;
+  margin: 30px auto;
+  border: 2px solid #d10024;
+  padding: inherit;
+}
+
+.personalInfo {
+  margin: 0px auto;
+  width: 80%;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.personalInfo input {
+  font-size: 25px;
+  width: 80%;
+}
+
+.personalInfo label {
+  font-size: 25px;
+  padding: 10px;
+}
+
+#city {
+  width: 40%;
+}
+
+#zip {
+  width: 20%;
+}
+
+#pay {
+  width: 80%;
+  margin: 0px auto;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#pay span {
+  font-size: 30px;
+}
+
+#pay label {
+  font-size: 20px;
+}
+
+#pay input {
+  margin: 20px 10px;
+}
+
+.pay {
+  border: 2px solid #d10024;
+}
+
+#additional {
+  padding: 15px 0px;
+}
+
+#additional select, #additional input {
+  padding: 10px;
+}
+
+.mobile {
+  margin-bottom: 20px;
+  padding: 10px !important;
+}
+
+#add {
+  font-size: 25px;
+  background-color: #15161d;
+  color: #fff;
+  width: 100%;
+  margin: 5px 0px;
+  border: none;
+  padding: 10px;
+  width: 25%;
+  margin: 0px auto;
+}
+
+#add:hover {
+  background-color: #d10024;
+}
+
+.hide {
+  visibility: hidden;
+}
+
+#comments {
+  text-align: center;
+  font-size: 30px;
+}
+
+#comments textarea {
+  width: 80%;
+  margin: 20px auto;
+  font-size: 20px;
+}
+
+#finish {
+  text-align: center;
+  font-size: 25px;
+}
+
+#finish button {
+  font-size: 25px;
+  background-color: #15161d;
+  color: #fff;
+  width: 100%;
+  margin: 5px 0px;
+  border: none;
+  padding: 10px;
+  width: 40%;
+  margin-top: 15px;
+}
+
+#finish button:hover {
+  background-color: #d10024;
+}
+
+.inputError {
+  background-color: rgba(209, 0, 36, 0.5);
+  border: 3px solid #d10024;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.required {
+  color: #d10024;
+  margin-left: 5px;
 }
 /*# sourceMappingURL=style.css.map */

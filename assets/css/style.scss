@@ -11,6 +11,18 @@ $white:#fff;
     flex-flow: row wrap;
     justify-content: space-around;
 }
+@mixin button {
+    font-size: 25px;
+    background-color: $color1;
+    color:$white;
+    width: 100%;
+    margin:5px 0px;
+    border: none;
+    padding:10px;
+    &:hover{
+        background-color: $color2;
+    }
+}
 @mixin headingSize{
     font-size:50px;
 }
@@ -27,6 +39,17 @@ img{
     background-color: rgba($color1,0.5);
     overflow: hidden; 
 }
+#scrollTop{
+    position: fixed;
+    bottom:30px;
+    right:30px;
+    background: $color2;
+    color:$white;
+    padding:10px;
+    display:none;
+    z-index:997;
+    font-size:30px;
+}
 #coverDiv{
     position: fixed;
     width: 100%;
@@ -42,6 +65,7 @@ nav{
     background-color: $color1;
     border-bottom:3px solid $color2 ;
 }
+
 #nav{
     width:50%;
     text-align: right;
@@ -261,17 +285,11 @@ nav{
         padding:10px;
         border-top:1px solid rgba($color1,0.5);
         button{
-            font-size: 25px;
-            background-color: $color1;
-            color:$white;
-            width: 100%;
-            margin:5px 0px;
-            border: none;
-            padding:10px;
-            &:hover{
-                background-color: $color2;
+            @include button;
             }
-        }
+    }
+    .buynow{
+        @include button;
     }
     //Products
     #products{
@@ -306,7 +324,7 @@ nav{
         width: 80%;
         background-color: $white;
         left:0;
-        min-height:80%;
+        max-height: 100%;
         right:0;
         overflow-y: scroll;
         margin: 0px auto;
@@ -326,6 +344,11 @@ nav{
         width:50%;
         text-align: center;
         padding:30px 10px;
+        margin:30px auto;
+        ul li{
+            text-align: center;
+            margin:20px auto;
+        }
     }
     .close{
         position: absolute;
@@ -357,28 +380,147 @@ nav{
             margin:50px auto;
             margin-bottom: 20px;
         }
-        button{
-            font-size: 25px;
-            background-color: $white;
-            color:$color1;
-            width: 20%;
-            border: none;
-            margin:20px;
-            padding:10px;
-            &:hover{
-                background-color: $color2;
-                color:$white;
-            }
-        }
     }
+    #sign{
+        @include button;
+        width:20%;
+        background-color: $white;
+        color:$color1;
+        margin:30px 0px;
+     }
     #newsMessage{
         font-size:25px;
     }
     //Footer
     footer{
-        background-color:$color1 ;
-        height:20vh;
+        @include flex;
+        background-color:$color1;
     }
+    #footnav,#social{
+        width: 30%;
+        color:$white;
+        padding:20px;
+        border: none;
+        li{
+            display: inline;
+            padding:20px;
+            a{
+                color:$white;
+                font-size:20px;
+            }
+        }
+    }
+    #social{
+        text-align: right;
+    }
+    //Order form
+    #order{
+        background-color:$color1;
+        padding:20px;
+        h2{
+            font-size:60px;
+            text-align: center;
+            color:$white;
+        }
+        select,textarea,input{
+            border: 2px solid $color1;
+            padding:0px 10px;
+            outline: none;
+        }
+    }
+    #orderForm{
+        width:60%;
+        background: $white;
+        margin: 30px auto;
+        border: 2px solid $color2;
+        padding: inherit;
+    }
+    .personalInfo{
+        margin:0px auto;
+        width:80%;
+        padding:10px;
+        @include flex;
+        input{
+            font-size: 25px;
+            width:80%;
+        }
+        label{
+            font-size:25px;
+            padding:10px;
+        }
+    }
+    #city{
+        width:40%;
+    }
+    #zip{
+        width:20%;
+    }
+    #pay{
+        width:80%;
+        margin:0px auto;
+        padding:20px;
+        @include flex;
+        justify-content: space-between;
+        span{
+            font-size:30px;
+        }
+        label{
+            font-size:20px;
+        }
+        input{
+            margin:20px 10px;
+        }
+    }
+    .pay{
+        border: 2px solid $color2;
+    }
+    #additional{
+        padding: 15px 0px;
+        select,input{
+            padding:10px;
+        }
+       
+    }
+    .mobile{
+        margin-bottom:20px;
+        padding:10px !important;
+    }
+    #add{
+        @include button;
+        width: 25%;
+        margin:0px auto;
+    }
+    .hide{
+        visibility: hidden;
+    }
+    #comments{
+        text-align: center;
+        font-size:30px;
+        textarea{
+            width:80%;
+            margin:20px auto;
+            font-size:20px;
+        }
+    }
+    #finish{
+        text-align: center;
+        font-size:25px;
+        button{
+            @include button;
+            width:40%;
+            margin-top: 15px;
+        }
+    }
+    .inputError{
+        background-color: rgba($color2,0.5);
+        border: 3px solid $color2;
+        transition: .5s;
+    }
+    .required{
+        color:$color2;
+        margin-left:5px;
+    }
+    
    
     
 

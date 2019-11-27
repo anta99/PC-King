@@ -4,9 +4,77 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Pc King</title>
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+    <link rel="stylesheet" href="assets/css/queries.css" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 </head>
 <body>
-    <h1>Ovde ce te popuniti formular za kupovinu</h1>
+    <nav>
+            <div id="logo">
+                <h1><span id="redHeading">pc</span> King</h1>
+            </div>
+            <div id="responsive"><i class="fa fa-navicon"></i></div>
+            <div id="nav">
+                <ul id="menu"></ul>
+            </div>
+        </nav>
+        <main id="order">
+            <h2>Order form:</h2>
+            <section id="orderForm">
+                <form action="" method="GET" name="orderForm" id="form">
+                    <div class="personalInfo">
+                        <label for="name">Name<span class="required">*</span></label>
+                        <input type="text" name="fullName" id="fullname" />
+                    </div>
+                    <div class="personalInfo">
+                        <label for="mail">Email<span class="required">*</span></label>
+                        <input type="text" name="mail" id="mail" />
+                    </div>
+                    <div class="personalInfo">
+                        <label for="city">City<span class="required">*</span></label>
+                        <input type="text" name="city" id="city" />
+                        <label for="zip">Zip</label>
+                        <input type="text" name="city" id="zip" />
+                    </div>
+                    <div class="personalInfo">
+                        <label for="address">Address<span class="required">*</span></label>
+                        <input type="text" name="address" id="address" />
+                    </div>
+                    <div class="personalInfo mob">
+                        <label>Mobile</label>
+                        <input type="text" name="mob1" class="mobile" />
+                        <button id="add">Add more mobile</button>
+                    </div>
+                    <div id="pay">
+                        <div>
+                            <span>Payment method <span class="required">*</span></span><br/>
+                            <input type="radio" name="paymethod" id="cod" /><label for="cod">Cash on delivery</label>
+                            <input type="radio" name="paymethod" id="card" /><label for="card">Online</label>
+                        </div>
+                        <div id="additional">
+                            <select name="creditCard" id="creditCard"></select>
+                            <label for="cardNumber">Card number</label><input type="text" id="cardNumber" name="cardNumber" />
+                        </div>
+                    </div>
+                    <div id="comments">
+                        <h3>Leave your comments here</h3>
+                        <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+                    </div>
+                    <div id="finish">
+                        <input type="checkbox" name="privacy" id="privacy" />
+                        <label for="privacy">I accept privacy police </label><br/>
+                        <button type="button" id="submit">Order</button>
+                        <button type="reset" id="reset">Clear form</button>
+                    </div>
+                </form>
+            </section>
+        </main>
+        <footer>
+        
+        </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="assets/js/menus.js"></script>      
+    <script src="assets/js/form.js"></script>    
 </body>
 </html>
