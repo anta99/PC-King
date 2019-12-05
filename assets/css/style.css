@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap");
 * {
   margin: 0px;
   padding: 0px;
@@ -72,6 +73,7 @@ nav {
 
 #logo h1 {
   font-size: 50px;
+  font-family: 'Abril Fatface', cursive;
 }
 
 #redHeading {
@@ -88,6 +90,7 @@ nav {
 #menu li a {
   color: #fff;
   font-size: 25px;
+  font-family: 'Prata', serif;
 }
 
 #menu li a::after {
@@ -152,6 +155,7 @@ nav {
 }
 
 .message {
+  font-family: 'Abril Fatface', cursive;
   background-color: rgba(21, 22, 29, 0.5);
   position: absolute;
   width: 50%;
@@ -167,6 +171,7 @@ nav {
 .message h1 {
   font-size: 60px;
   margin-bottom: 30px;
+  word-spacing: 10px;
 }
 
 .message h2 {
@@ -232,6 +237,7 @@ nav {
 
 #textAbout h2 {
   font-size: 50px;
+  font-family: 'Abril Fatface', cursive;
   text-align: center;
   margin: 20px 0px;
 }
@@ -291,6 +297,7 @@ nav {
 
 #bestSellers h2 {
   font-size: 50px;
+  font-family: 'Abril Fatface', cursive;
   color: #15161d;
 }
 
@@ -333,16 +340,12 @@ nav {
   display: inline;
 }
 
-.bestSeler:hover .options, .product:hover .options {
-  opacity: 1;
-}
-
 .options {
   margin-top: 10px;
   opacity: 0;
-  -webkit-transition: 1s;
-  transition: 1s;
   padding: 10px;
+  -webkit-transition: .5s;
+  transition: .5s;
   border-top: 1px solid rgba(21, 22, 29, 0.5);
 }
 
@@ -358,6 +361,10 @@ nav {
 
 .options button:hover {
   background-color: #d10024;
+}
+
+.optionsOpacity {
+  opacity: 1;
 }
 
 .buynow {
@@ -381,6 +388,7 @@ nav {
 
 #products h2 {
   font-size: 50px;
+  font-family: 'Abril Fatface', cursive;
 }
 
 .filterbtn {
@@ -421,7 +429,7 @@ nav {
   overflow-y: scroll;
   margin: 0px auto;
   z-index: 999;
-  top: 15%;
+  top: 5%;
 }
 
 .product {
@@ -431,7 +439,16 @@ nav {
 
 .detailImg {
   width: 30%;
-  padding: 40px;
+  padding: 30px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .detaliName {
@@ -444,14 +461,17 @@ nav {
 .detaliName ul li {
   text-align: center;
   margin: 20px auto;
+  padding: 10px 0px;
 }
 
-.close {
-  position: absolute;
-  top: 10px;
-  cursor: pointer;
-  font-size: 40px;
-  right: 20px;
+.detaliName ul li::after {
+  content: '';
+  display: block;
+  width: 80%;
+  margin: 10px auto;
+  background-image: -webkit-gradient(linear, right top, left top, from(#fff), color-stop(#15161d), to(#fff));
+  background-image: linear-gradient(to left, #fff, #15161d, #fff);
+  height: 2px;
 }
 
 #contact {
@@ -470,6 +490,7 @@ nav {
 
 #newsletter h2 {
   font-size: 50px;
+  font-family: 'Abril Fatface', cursive;
 }
 
 #newsletter input {
@@ -512,27 +533,27 @@ footer {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   background-color: #15161d;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-#footnav, #social {
+#footnav, .social {
   width: 30%;
   color: #fff;
+  text-align: center;
   padding: 20px;
   border: none;
 }
 
-#footnav li, #social li {
-  display: inline;
+#footnav li, .social li {
+  display: inline-block;
   padding: 20px;
 }
 
-#footnav li a, #social li a {
+#footnav li a, .social li a {
   color: #fff;
   font-size: 20px;
-}
-
-#social {
-  text-align: right;
 }
 
 #order {
@@ -547,7 +568,6 @@ footer {
 }
 
 #order select, #order textarea, #order input {
-  border: 2px solid #15161d;
   padding: 0px 10px;
   outline: none;
 }
@@ -606,9 +626,6 @@ footer {
           flex-flow: row wrap;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
 #pay span {
@@ -635,9 +652,12 @@ footer {
   padding: 10px;
 }
 
-.mobile {
-  margin-bottom: 20px;
-  padding: 10px !important;
+.close {
+  position: absolute;
+  top: 10px;
+  cursor: pointer;
+  font-size: 40px;
+  right: 20px;
 }
 
 #add {
@@ -658,17 +678,6 @@ footer {
 
 .hide {
   visibility: hidden;
-}
-
-#comments {
-  text-align: center;
-  font-size: 30px;
-}
-
-#comments textarea {
-  width: 80%;
-  margin: 20px auto;
-  font-size: 20px;
 }
 
 #finish {
@@ -692,15 +701,34 @@ footer {
   background-color: #d10024;
 }
 
+#finish p {
+  display: none;
+  color: #d10024;
+}
+
 .inputError {
-  background-color: rgba(209, 0, 36, 0.5);
   border: 3px solid #d10024;
-  -webkit-transition: .5s;
-  transition: .5s;
 }
 
 .required {
   color: #d10024;
   margin-left: 5px;
+}
+
+#finishMessage {
+  padding: 20px;
+}
+
+#finishMessage h2 {
+  font-size: 30px;
+  color: #fff;
+}
+
+.finishCorrect {
+  background-color: #73ff38;
+}
+
+.finishWrong {
+  background-color: #d10024;
 }
 /*# sourceMappingURL=style.css.map */

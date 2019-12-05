@@ -2,12 +2,16 @@
   .bestSeler, .product {
     width: 25%;
   }
-  #mob1, #mob2 {
-    width: 25%;
+  .personalInfo {
+    width: 100%;
+    margin: 10px auto;
+  }
+  #footnav {
+    width: 40%;
   }
 }
 
-@media screen and (min-width: 800px) and (max-width: 1200px) {
+@media screen and (min-width: 800px) and (max-width: 1250px) {
   #menu li {
     padding: 30px 10px;
   }
@@ -66,15 +70,35 @@
         -ms-flex-pack: center;
             justify-content: center;
   }
-  input {
+  #pay {
+    padding: 10px;
     width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   #mob1, #mob2 {
     width: 30%;
   }
+  #cod, #card {
+    width: 5%;
+  }
+  #footnav li, .social li {
+    padding: 5px;
+  }
+  .social {
+    margin-left: 45px;
+  }
 }
 
 @media screen and (max-width: 800px) {
+  #scrollTop {
+    right: 10px;
+    bottom: 10px;
+  }
   #logo {
     width: 50%;
   }
@@ -107,6 +131,12 @@
     width: 100%;
     top: 20%;
   }
+  .message h1 {
+    font-size: 35px;
+  }
+  .message h2 {
+    font-size: 25px;
+  }
   @-webkit-keyframes slide {
     0% {
       top: -100%;
@@ -132,7 +162,7 @@
   .textAbout p {
     word-wrap: break-word;
     word-break: keep-all;
-    text-align: center;
+    text-align: left;
     font-size: 22px;
   }
   .plus {
@@ -148,7 +178,7 @@
     width: 100%;
   }
   #newsletter h2 {
-    font-size: 35px;
+    font-size: 30px;
   }
   #newsletter input {
     width: 100%;
@@ -165,14 +195,13 @@
   .detailImg {
     width: 100%;
   }
-  #footnav, #social {
+  #footnav, .social {
     width: 100%;
-    text-align: center;
+  }
+  #footnav li, .social li {
+    padding: 10px;
   }
   #orderForm {
-    width: 100%;
-  }
-  #orderForm input {
     width: 100%;
   }
   #city, #zip {
@@ -181,11 +210,22 @@
   #mob1, #mob2 {
     width: 100%;
   }
+  .personalInfo input {
+    width: 100%;
+  }
   #finish button {
     width: 100%;
   }
   #pay {
     width: 100%;
+    padding: 10px;
+  }
+  #creditCard {
+    width: 100%;
+  }
+  #additional span {
+    margin: 20px 0px;
+    text-align: center;
   }
 }
 
@@ -210,7 +250,7 @@
   }
   #menu li {
     display: block;
-    padding: 10px;
+    padding: 5px;
   }
   #nav {
     width: 100%;
@@ -221,11 +261,14 @@
   .message {
     display: none;
   }
-  .message h1, .message h2 {
-    font-size: 25px;
+  #textAbout h2 {
+    font-size: 30px;
   }
   .textAbout {
     padding: 10px;
+  }
+  .textAbout p {
+    font-size: 20px;
   }
   .plus {
     top: 50%;
@@ -246,13 +289,19 @@
   .options button {
     font-size: 20px;
   }
+  #products h2 {
+    font-size: 35px;
+  }
   .filterbtn {
     width: 70%;
     margin: 30px auto;
   }
   #footnav li {
-    display: block;
+    display: inline-block;
     padding: 10px;
+  }
+  #finishMessage h2 {
+    font-size: 20px;
   }
 }
 /*# sourceMappingURL=queries.css.map */

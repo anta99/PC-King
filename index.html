@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="PC KING-Best PC and Laptops configurations.One of the top rated European suppliers of computers and laptops.Best for your money." />
+    <meta name="keywords" content="pc,computers,king,laptops,best configurations,components,AMD,INTEL" />
     <title>Pc King</title>
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
     <link rel="stylesheet" href="assets/css/queries.css" type="text/css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link href="assets/images/ikonica.ico" rel="shortcut icon" />
 </head>
 <body>
     <header>
@@ -25,10 +28,9 @@
             <span id="next"><i class="fa fa-chevron-right"></i></span>
             <span id="prev"><i class="fa fa-chevron-left"></i></span>
             <div id="slideImg">
-                <!--<img src="src" alt="sliderSlika" class="slika" />-->
                 <div class="message">
-                    <h1>Ovde ide neki naslov</h1>
-                    <h2>Ovde ide neki podnaslov</h2>
+                    <h1></h1>
+                    <h2></h2>
                 </div>
             </div>
         </section>
@@ -40,14 +42,14 @@
             </article>
         </section>
         <section id="bestSellers">
-            <h2>Best sellesrs</h2>
+            <h2>Best sellers</h2>
             <div id="wrapper"></div>
         </section>
         <section id="products">
             <h2>Products</h2>
-            <button class="filterbtn filterActive" onclick='filter("")'>All</button>
-            <button class="filterbtn" onclick='filter("pc")'>PC</button>
-            <button class="filterbtn" onclick='filter("laptop")'>Laptops</button>
+            <button class="filterbtn filterActive" id="filterAll">All</button>
+            <button class="filterbtn" id="filterPc">PC</button>
+            <button class="filterbtn" id="filterLaptop">Laptops</button>
            <div id="wrapperProduct"></div>
         </section>
         <section id="contact">
@@ -56,7 +58,7 @@
                 <form action="" method="GET" name="newsletter">
                     <input type="text" id="mail" name="mail" placeholder="Enter your mail"/><br/>
                     <span id="newsMessage"></span><br/>
-                    <input type="button" id="sign" value="Sign in" onclick="newsLetter()"/>
+                    <input type="button" id="sign" value="Subscribe"/>
                 </form>
             </article>
         </section>
@@ -65,7 +67,6 @@
         
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="assets/js/menus.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
 </html>

@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap');
 $color1:rgb(21,22,29);
 $color2:rgb(209,0,36);
 $white:#fff;
@@ -22,6 +23,9 @@ $white:#fff;
     &:hover{
         background-color: $color2;
     }
+}
+@mixin headingFont {
+    font-family: 'Abril Fatface', cursive;
 }
 @mixin headingSize{
     font-size:50px;
@@ -77,6 +81,7 @@ nav{
     
     h1{
         @include headingSize;
+        @include headingFont;
     }
 }
 #redHeading{
@@ -90,6 +95,7 @@ nav{
     a{
         color: $white;
         font-size:25px;
+        font-family: 'Prata', serif;
         &::after{
             content: "";
             display: block;
@@ -146,6 +152,7 @@ nav{
     position: relative;
 }
 .message{
+    @include headingFont;
     background-color: rgba($color1,0.5);
     position: absolute;
     width: 50%;
@@ -159,6 +166,8 @@ nav{
     h1{
         font-size:60px;
         margin-bottom: 30px;
+        
+        word-spacing: 10px;
     }
     h2{
         font-size: 40px;
@@ -191,13 +200,14 @@ nav{
     background-color: $color1;
     color:$white;
     padding:30px 0px;
-   
+    
     }
     #textAbout{
         width: 70%;
         margin:0px auto;
         h2{
          @include headingSize;
+         @include headingFont;
          text-align: center;
          margin:20px 0px;
      }
@@ -246,6 +256,7 @@ nav{
         margin:20px 0px;
         h2{
             @include headingSize;
+            @include headingFont;
             color:$color1;
         }
     }
@@ -274,19 +285,19 @@ nav{
             color: $color1;
             display: inline;
         }
-        &:hover .options{
-            opacity: 1;
-        }
     }
     .options{
         margin-top:10px;
         opacity: 0;
-        transition: 1s;
         padding:10px;
+        transition: .5s;
         border-top:1px solid rgba($color1,0.5);
         button{
             @include button;
             }
+    }
+    .optionsOpacity{
+        opacity: 1;
     }
     .buynow{
         @include button;
@@ -297,6 +308,7 @@ nav{
         margin:30px 0px;
         h2{
             @include headingSize;
+            @include headingFont;
         }
     }
     #wrapperProduct{
@@ -329,7 +341,7 @@ nav{
         overflow-y: scroll;
         margin: 0px auto;
         z-index: 999;
-        top:15%;
+        top:5%;
     }
     .product{
         @extend .bestSeler;
@@ -338,7 +350,10 @@ nav{
     }
     .detailImg{
         width:30%;
-        padding:40px;
+        padding:30px;
+        justify-content: center;
+        display: flex;
+        align-items: center;
     }
     .detaliName{
         width:50%;
@@ -348,14 +363,18 @@ nav{
         ul li{
             text-align: center;
             margin:20px auto;
+            padding:10px 0px;
+            //border-bottom:2px solid $color1;
+            &::after{
+                content: '';
+                display:block;
+                width:80%;
+                margin:10px auto;
+                //background-image: linear-gradient(red, yellow);
+                background-image:linear-gradient(to left,$white,$color1,$white);
+                height:2px;
+            }
         }
-    }
-    .close{
-        position: absolute;
-        top:10px;
-        cursor: pointer;
-        font-size:40px;
-        right:20px;
     }
     //Contact
     #contact{
@@ -373,6 +392,7 @@ nav{
         color:$white;
         h2{
             font-size: 50px;
+            @include headingFont;
         }
         input{
             padding:10px;
@@ -395,23 +415,22 @@ nav{
     footer{
         @include flex;
         background-color:$color1;
+        align-items: center;
     }
-    #footnav,#social{
+    #footnav,.social{
         width: 30%;
         color:$white;
+        text-align: center;
         padding:20px;
         border: none;
         li{
-            display: inline;
+            display: inline-block;
             padding:20px;
             a{
                 color:$white;
                 font-size:20px;
             }
         }
-    }
-    #social{
-        text-align: right;
     }
     //Order form
     #order{
@@ -423,9 +442,9 @@ nav{
             color:$white;
         }
         select,textarea,input{
-            border: 2px solid $color1;
             padding:0px 10px;
             outline: none;
+            
         }
     }
     #orderForm{
@@ -460,7 +479,6 @@ nav{
         margin:0px auto;
         padding:20px;
         @include flex;
-        justify-content: space-between;
         span{
             font-size:30px;
         }
@@ -479,11 +497,13 @@ nav{
         select,input{
             padding:10px;
         }
-       
     }
-    .mobile{
-        margin-bottom:20px;
-        padding:10px !important;
+    .close{
+    position: absolute;
+    top:10px;
+    cursor: pointer;
+    font-size:40px;
+    right:20px;
     }
     #add{
         @include button;
@@ -493,15 +513,6 @@ nav{
     .hide{
         visibility: hidden;
     }
-    #comments{
-        text-align: center;
-        font-size:30px;
-        textarea{
-            width:80%;
-            margin:20px auto;
-            font-size:20px;
-        }
-    }
     #finish{
         text-align: center;
         font-size:25px;
@@ -510,18 +521,28 @@ nav{
             width:40%;
             margin-top: 15px;
         }
+        p{
+            display: none;
+            color:$color2;
+        }
     }
     .inputError{
-        background-color: rgba($color2,0.5);
         border: 3px solid $color2;
-        transition: .5s;
     }
     .required{
         color:$color2;
         margin-left:5px;
     }
-    
-   
-    
-
-    
+    #finishMessage{
+        padding:20px;
+        h2{
+            font-size:30px;
+            color: $white;
+        }
+    }
+    .finishCorrect{
+        background-color:#73ff38;
+    }
+    .finishWrong{
+        background-color:$color2;
+    }

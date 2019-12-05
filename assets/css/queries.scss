@@ -1,13 +1,16 @@
 @media screen and (min-width:1200px) and (max-width:1600px){
     .bestSeler,.product{
-        width: 25%;
-        
+        width: 25%; 
     }
-    #mob1,#mob2{
-        width:25%;
+   .personalInfo{
+       width:100%;
+       margin:10px auto;
+   }
+    #footnav{
+        width:40%;
     }
 }
-@media screen and (min-width:800px) and (max-width:1200px){
+@media screen and (min-width:800px) and (max-width:1250px){
     #menu li{
         padding:30px 10px;
         a{
@@ -68,18 +71,37 @@
     }
     .row{
         text-align: center;
-        justify-content: center;
-        
+        justify-content: center;  
     }
-    input{
+    #pay{
+        padding:10px;
         width:100%;
+        justify-content:center;
+        align-items: center;
     }
     #mob1,#mob2{
         width:30%;
     }
+    #cod,#card{
+        width:5%;
+    }
+    //Footer
+    #footnav,.social{
+        li{
+            padding: 5px;
+        }
+    }
+    .social{
+        margin-left:45px;
+    }
+    //Order form
    
 }
 @media screen and (max-width:800px){
+    #scrollTop{
+        right:10px;
+        bottom:10px;
+    }
     #logo{
         width: 50%;
         h1{
@@ -111,6 +133,12 @@
     .message{
         width: 100%;
         top:20%;
+        h1{
+            font-size:35px;
+        }
+        h2{
+            font-size: 25px;
+        }
     }
     @keyframes slide{
         0%{
@@ -128,8 +156,9 @@
     .textAbout p{
         word-wrap: break-word;
         word-break: keep-all;
-        text-align: center;
+        text-align: left;
         font-size:22px;
+        //word-spacing: -5px;
     }
     .plus{
         right:10px;
@@ -145,7 +174,7 @@
     #newsletter{
         width:100%;
         h2{
-            font-size:35px;
+            font-size:30px;
         }
         input{
             width: 100%;
@@ -165,16 +194,15 @@
         width: 100%;
     }
     //Footer
-    #footnav,#social{
+    #footnav,.social{
         width:100%;
-        text-align: center;
+        li{
+            padding:10px;
+        }
     }
     //Order form
     #orderForm{
         width:100%;
-        input{
-            width:100%;
-        }
     }
     #city,#zip{
         width:100%;
@@ -182,15 +210,27 @@
     #mob1,#mob2{
         width:100%;
     }
+    .personalInfo input{
+        width: 100%;
+    }
     #finish{
         button{
             width:100%;
         }
+      
     }
     #pay{
         width:100%;
+        padding:10px;
     }
-    
+
+    #creditCard{
+        width:100%;
+    }
+    #additional span{
+        margin:20px 0px;
+        text-align: center;
+    }
 }
 @media screen and (max-width:600px){
     #logo{
@@ -212,7 +252,7 @@
       text-align: center;
       li{
           display: block;
-          padding: 10px;
+          padding: 5px;
       }
     }
     #nav{
@@ -223,13 +263,19 @@
     }
     .message{
         display: none;
-        h1,h2{
-            font-size: 25px;
-        }
     }
     //About
+    #textAbout{
+        h2{
+            font-size:30px
+        }
+    }
+
     .textAbout{
         padding:10px;
+        p{
+            font-size: 20px;
+        }
     }
     .plus{
         top:50%;
@@ -253,12 +299,18 @@
         }
     }
     //Products
+    #products h2{
+        font-size:35px;
+    }
     .filterbtn{
         width: 70%;
         margin:30px auto;
     }
     #footnav li{
-        display: block;
+        display: inline-block;
         padding: 10px;
+    }
+    #finishMessage h2{ 
+        font-size: 20px;
     }
 }
